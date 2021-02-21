@@ -492,6 +492,9 @@ BigAlien = function () {
              -20,   0,
               40,   0]);
 
+  this.color = "purple";
+  this.solid = true;
+
   this.children.top = new Sprite();
   this.children.top.init("bigalien_top",
                          [-8, -4,
@@ -681,7 +684,7 @@ Asteroid = function () {
               -4, -10,
               -4,  -5]);
 
-  this.color = 'lightgray';
+  this.color = 'green';
   this.solid = true;
   this.visible = true;
   this.scale = 6;
