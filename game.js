@@ -483,14 +483,14 @@ Ship.prototype = new Sprite();
 
 BigAlien = function () {
   this.init("bigalien",
-            [-20,   0,
+            [-40,   0,
              -12,  -4,
               12,  -4,
               20,   0,
               12,   4,
              -12,   4,
              -20,   0,
-              20,   0]);
+              40,   0]);
 
   this.children.top = new Sprite();
   this.children.top.init("bigalien_top",
@@ -718,12 +718,13 @@ Asteroid.prototype = new Sprite();
 
 Coin = function () {
   this.init("coin",
-            [-5,  0,
-              0,  5,
-              5,  0,
-              0, -5]);
+            [-50,  0,
+              0,  50,
+              50,  0,
+              0, -50]);
 
   this.solid = true;
+  this.color = "red";
 
   this.collidesWith = ["ship"];
 
